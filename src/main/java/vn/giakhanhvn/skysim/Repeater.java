@@ -496,7 +496,7 @@ public class Repeater {
         }
         String skysim = Sputnik.trans("&e&lSKYSIM");
         Boolean isNotCracked = Bukkit.getServer().getOnlineMode();
-        skysim = SBA_MAP.containsKey(uuid) ? (SBA_MAP.get(uuid).booleanValue() ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK") : (isNotCracked.booleanValue() ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYSIM &b&lBETA") : ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYSIM &b&lBETA"))) : (isNotCracked != false ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYSIM &b&lBETA") : ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYSIM &b&lBETA"));
+        skysim = SBA_MAP.containsKey(uuid) ? (SBA_MAP.get(uuid).booleanValue() ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK") : (isNotCracked.booleanValue() ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK") : ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK"))) : (isNotCracked != false ? ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK") : ChatColor.translateAlternateColorCodes((char)'&', (String)"&e&lSKYBLOCK"));
         Sidebar sidebar = new Sidebar("" + skysim, "SKYSIM");
         String strd = SUtil.getDate();
         if (RebootServerCommand.secondMap.containsKey(Bukkit.getServer())) {
@@ -645,10 +645,10 @@ public class Repeater {
             if (SBA_MAP.get(uuid).booleanValue()) {
                 sidebar.add(ChatColor.YELLOW + "www.hypixel.net");
             } else {
-                sidebar.add(ChatColor.YELLOW + "mc.skysim.sbs");
+                sidebar.add(ChatColor.YELLOW + "mc.funpixel.fun");
             }
         } else {
-            sidebar.add(ChatColor.YELLOW + "mc.skysim.sbs");
+            sidebar.add(ChatColor.YELLOW + "mc.funpixel.fun");
         }
         if (!player.getWorld().getName().equalsIgnoreCase("limbo") && !player.getWorld().getName().equalsIgnoreCase("dungeon")) {
             sidebar.apply(player);
@@ -663,7 +663,7 @@ public class Repeater {
             sidebar1.add("If your connection is");
             sidebar1.add("unstable, stay here!");
             sidebar1.add(ChatColor.AQUA + "     ");
-            sidebar1.add(ChatColor.YELLOW + "skysim.sbs");
+            sidebar1.add(ChatColor.YELLOW + "funpixel.fun");
             sidebar1.apply(player);
         }
     }
