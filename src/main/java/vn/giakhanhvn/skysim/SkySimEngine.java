@@ -239,7 +239,7 @@ public class SkySimEngine
             this.bc = new BungeeChannel((Plugin)this);
             this.setupEconomy();
             SLog.info("===================================");
-            SLog.info("SKYSIM ENGINE - MADE BY GIAKHANHVN");
+            SLog.info("FUNPIXEL ENGINE - MADE BY LEXXYLEGEND");
             SLog.info("===================================");
             plugin = this;
             SLog.info("Hooked successfully into SputnikSkySim!");
@@ -356,7 +356,7 @@ public class SkySimEngine
             WorldListener.c();
             SLog.info("Successfully enabled " + this.getDescription().getFullName());
             SLog.info("===================================");
-            SLog.info("SKYSIM ENGINE - MADE BY GIAKHANHVN");
+            SLog.info("FUNPIXEL ENGINE - MADE BY LEXXXYLEGEND");
             SLog.info("PLUGIN ENABLED! HOOKED INTO SSS!");
             SLog.info("===================================");
             this.sq = new SummoningSequence(Bukkit.getWorld((String)"arena"));
@@ -429,7 +429,7 @@ public class SkySimEngine
         }
         SLog.info("Disabled " + this.getDescription().getFullName());
         SLog.info("===================================");
-        SLog.info("SKYSIM ENGINE - MADE BY GIAKHANHVN");
+        SLog.info("FUNPIXEL ENGINE - MADE BY LEXXXYLEGEND");
         SLog.info("PLUGIN DISABLED!");
         SLog.info("===================================");
     }
